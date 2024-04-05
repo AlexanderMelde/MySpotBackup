@@ -1,4 +1,5 @@
 config = {
+    "port": 8080,
     "uri": "http://youripaddress:8080",
     "login_url": "http://youripaddress:8080/login",
     "callback_uri": "http://youripaddress:8080/callback",

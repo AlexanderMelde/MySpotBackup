@@ -1,10 +1,9 @@
-const express = require('express')
 const crypto = require('crypto')
-const app = express()
-const port = 8080
-
-const config = require("./public/config")
+const express = require('express')
 const {stringify} = require("querystring");
+const config = require("./public/config")
+
+const app = express()
 const codeVerifier = generateRandomString(128);
 
 function generateRandomString(length) {
@@ -78,6 +77,6 @@ async function getAccessToken(code) {
 }
 
 
-app.listen(port, () => {
-    console.log(`Example app listening on port ${port}`, config);
+app.listen(config.port, () => {
+    console.log(`MySpotBackup is running`, config);
 })
