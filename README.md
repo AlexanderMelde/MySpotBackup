@@ -44,6 +44,11 @@ Some ugly code here:
 - we could host it online (github deploy actions etc.)
 - we could merge [open pull request](https://github.com/secuvera/SpotMyBackup/pulls) features and improvements from the original page
 - we could use different scopes (read/write) for the different actions (export only needs reed permission from spotify)
+- we could catch some common errors to provide help instead of crashing
+
+## FAQ
+- I get the error ``Error: Cannot find module './public/config'``: You forgot to create a copy of ``public/config.example.js`` (file name ``public/config.js``)
+- Can i use localhost instead of ``youripadress``?: Yes, just use any available hostname. Make sure to also use it inside the Spotify dashboard. The only thing not working should be file:// urls.
 
 ## Helpful Links 
 - https://developer.spotify.com/documentation/web-api/tutorials/code-pkce-flow
