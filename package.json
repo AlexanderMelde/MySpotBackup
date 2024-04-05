@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "express": "^4.19.2",
+    "http-server": "^14.1.1"
+  },
+  "scripts": {
+    "serve-simple": "http-server ./public",
+    "serve-express": "node index.js"
+  }
+}
